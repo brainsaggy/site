@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical-to-Layman Dictionary — The Brain Sagger</title>
+<meta name="description" content="60+ medical terms translated into plain English. Built from real radiology reports, medical records, and 13 years of being dismissed.">
+<meta property="og:title" content="Medical-to-Layman Dictionary — The Brain Sagger">
+<meta property="og:description" content="60+ medical terms translated into plain English. Built from real radiology reports and 13 years of being dismissed.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="./favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Medical-to-Layman Dictionary",
+  "description": "60+ medical terms translated into plain English for CSF leak patients",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "The Brain Sagger"
+  },
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#dictionary" class="sr-only" style="position:absolute;top:0;left:0;padding:var(--space-2) var(--space-4);background:var(--color-primary);color:var(--color-text-inverse);z-index:100;font-size:var(--text-sm);">Skip to content</a>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="./index.html" class="header__logo" aria-label="The Brain Sagger — Home">
+      <img class="header__logo-icon" src="./assets/icon.png" alt="" width="36" height="36" style="border-radius: 50%;">
+      <span class="header__logo-text">The Brain Sagger</span>
+    </a>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobileNav()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav class="header__nav" id="mainNav">
+      <a href="./index.html" class="header__nav-link">Home</a>
+      <a href="./index.html#story" class="header__nav-link">My Story</a>
+      <a href="./index.html#csf-leaks" class="header__nav-link">About CSF Leaks</a>
+      <a href="#dictionary" class="header__nav-link" aria-current="page">Dictionary</a>
+      <a href="./index.html#timeline" class="header__nav-link">Timeline</a>
+      <a href="./index.html#loved-ones" class="header__nav-link">For Loved Ones</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════════ DICTIONARY HERO ═══════════════ -->
+<section class="section dict-hero" style="padding-top: calc(var(--space-16) + var(--space-8));">
+  <div class="container container--wide">
+    <a href="./index.html" class="dict-back-link">&larr; Back to Home</a>
+    <div class="section__eyebrow">Know What They're Saying</div>
+    <h1 class="section__title" style="font-size: var(--text-3xl);">Medical-to-Layman Dictionary</h1>
+    <p class="section__subtitle">Radiology reports and medical records are written in a language designed for doctors, not patients. Here's a translation guide built from real reports and real experience — so you can actually understand what they're telling you (and what they're not).</p>
+
+    <!-- Filter Tabs -->
+    <div class="dict-filters" role="tablist">
+      <button class="dict-filter is-active" data-filter="all" role="tab" aria-selected="true">All Terms</button>
+      <button class="dict-filter" data-filter="imaging" role="tab" aria-selected="false">Imaging &amp; Reports</button>
+      <button class="dict-filter" data-filter="anatomy" role="tab" aria-selected="false">Anatomy</button>
+      <button class="dict-filter" data-filter="diagnosis" role="tab" aria-selected="false">Diagnoses</button>
+      <button class="dict-filter" data-filter="procedure" role="tab" aria-selected="false">Procedures &amp; Tests</button>
+      <button class="dict-filter" data-filter="symptoms" role="tab" aria-selected="false">Symptoms</button>
+    </div>
+
+    <!-- Search -->
+    <div class="dict-search">
+      <svg class="dict-search__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" class="dict-search__input" placeholder="Search terms..." aria-label="Search medical terms" id="dictSearch">
+    </div>
+
+    <!-- Dictionary Grid -->
+    <div class="dict-grid" id="dictGrid">
+
+      <!-- ── IMAGING & REPORTS ── -->
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Unremarkable</div>
+        <div class="dict-card__def">The radiologist didn't see anything they think matters. <strong>It does not mean nothing is there.</strong> It means nothing caught their eye — and that's exactly the word that kept my leaking spine hidden for 13 years.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Impression</div>
+        <div class="dict-card__def">The radiologist's bottom-line summary. This is what your doctor reads first (and sometimes only). If something is wrong but isn't mentioned here, it may never be followed up on.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Findings</div>
+        <div class="dict-card__def">The detailed section of a radiology report describing what was actually seen on the images — size, shape, location, density of anything notable. Read this section carefully. The Impression may leave things out.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Clinical Indication <span class="dict-card__phonetic">[KLIN-ih-kul in-dih-KAY-shun]</span></div>
+        <div class="dict-card__def">The reason your doctor ordered the imaging, written at the top of the report. Example: "chronic mid-back pain — check structure." This tells the radiologist what to look for. If it's vague, the radiologist may not look hard enough.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Comparison: None</div>
+        <div class="dict-card__def">The radiologist had no prior images to compare against. This means they can't tell if something is new, growing, or changing. If you've had prior imaging, this might mean they didn't pull your old studies.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Incidental Finding <span class="dict-card__phonetic">[in-sih-DEN-tul]</span></div>
+        <div class="dict-card__def">Something the radiologist noticed that wasn't related to the reason you were scanned. Could be meaningless — or could be the thing that matters most. Don't ignore it just because they call it "incidental."</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Technique / Views</div>
+        <div class="dict-card__def">How many images were taken and from what angles (AP, lateral, oblique). If the report says "2 views" but 4 were actually taken, that's a red flag — it may mean not all images were reviewed.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">AP View / Lateral View</div>
+        <div class="dict-card__def">AP (anteroposterior) = front-to-back shot. Lateral = side view. Different views reveal different things. A lesion visible on a lateral may be invisible on an AP, which is why reviewing all views matters.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Preserved</div>
+        <div class="dict-card__def">"Disc space heights are preserved" = the spaces between your vertebrae look normal in height. Radiologists say this to indicate that discs haven't collapsed or degenerated. It doesn't mean everything is fine.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Focal <span class="dict-card__phonetic">[FOH-kul]</span></div>
+        <div class="dict-card__def">Concentrated in one specific spot, not spread out. "Focal abnormality at T12-L1" means something is happening at one precise location. This word should make you pay attention — especially if it matches where you feel pain.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Contrast / Gadolinium <span class="dict-card__phonetic">[GAD-oh-LIN-ee-um]</span></div>
+        <div class="dict-card__def">A dye injected into your bloodstream (for MRI) or spinal canal (for myelogram) to make certain structures light up on imaging. "Enhancement" on MRI with contrast can reveal inflammation or leaks that are invisible without it.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Sagittal / Axial / Coronal <span class="dict-card__phonetic">[SAJ-ih-tul / AX-ee-ul / kor-OH-nul]</span></div>
+        <div class="dict-card__def">The three planes an MRI slices through your body. Sagittal = side view (splits you left/right). Axial = top-down cross-sections. Coronal = front view (splits you front/back). Different lesions are best seen on different planes.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">T1 / T2 Weighted (MRI)</div>
+        <div class="dict-card__def">Two ways to process MRI signals. On T1, fluid appears dark; on T2, fluid appears bright (white). CSF leaks and diverticula are often best seen on T2 images because the fluid lights up. If your doctor only ordered T1, they may miss a fluid-filled structure.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Lesion <span class="dict-card__phonetic">[LEE-zhun]</span></div>
+        <div class="dict-card__def">Any area of abnormal tissue — could be a mass, a cyst, a tear, a scar, or almost anything that looks different from normal. It's a deliberately vague word. Ask what kind of lesion it is.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Soft Tissue Shadows</div>
+        <div class="dict-card__def">On x-rays, overlapping muscle, fat, or organs can create shadows that obscure bone detail. Radiologists sometimes use this as a reason they couldn't see something clearly. It can be legitimate — or it can be a way to dismiss a finding they didn't investigate.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <!-- ── ANATOMY ── -->
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Thoracolumbar Junction (T12-L1) <span class="dict-card__phonetic">[thor-AK-oh-LUM-bar]</span></div>
+        <div class="dict-card__def">Where the thoracic spine (mid-back) meets the lumbar spine (lower back) — around the bottom of your ribcage. This is a vulnerable transition zone and a common location for CSF leak sources like nerve root diverticula.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Paraspinal / Paraspinous <span class="dict-card__phonetic">[pair-uh-SPY-nul / pair-uh-SPY-nus]</span></div>
+        <div class="dict-card__def">The muscles running alongside your spine. "Left paraspinal tenderness at L1" means there's a painful spot in the muscles right next to your spine on the left side. If the same spot is tender for years, it may not be the muscles — it may be what's underneath them.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Dura / Dural <span class="dict-card__phonetic">[DUR-uh / DUR-ul]</span></div>
+        <div class="dict-card__def">The tough outermost membrane surrounding your brain and spinal cord. It holds cerebrospinal fluid in. When it tears or has a weak spot, CSF can leak out — that's the root cause of spontaneous intracranial hypotension.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Nerve Root Sleeve / Nerve Root Diverticulum <span class="dict-card__phonetic">[dy-ver-TIK-yoo-lum]</span></div>
+        <div class="dict-card__def">A small pouch or outpouching where the dura balloons out around a nerve root as it exits the spine. They can be normal variants, but when they enlarge, they become weak points where CSF can leak. These are what were found at my T12 and L1.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Foramen (Neural Foramen) <span class="dict-card__phonetic">[for-AY-men (NUR-ul for-AY-men)]</span></div>
+        <div class="dict-card__def">The bony opening on each side of a vertebra where a nerve root exits the spinal canal. "Expanding the left L1 foramen" means something (like a diverticulum) has grown large enough to widen the hole — which shouldn't be happening.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Neuroforaminal Encroachment <span class="dict-card__phonetic">[nur-oh-for-AM-ih-nul en-KROCH-ment]</span></div>
+        <div class="dict-card__def">Something (bone spur, disc bulge) is narrowing the opening where a nerve exits the spine, potentially pinching the nerve. Can cause pain, tingling, or weakness in the area that nerve supplies.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Cerebrospinal Fluid (CSF) <span class="dict-card__phonetic">[seh-REE-broh-SPY-nul]</span></div>
+        <div class="dict-card__def">The clear, colorless fluid that surrounds and cushions your brain and spinal cord. Your body produces about 500ml per day and reabsorbs it in a continuous cycle. When it leaks out, gravity pulls your brain downward — that's brain sag.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Foramen Magnum <span class="dict-card__phonetic">[for-AY-men MAG-num]</span></div>
+        <div class="dict-card__def">The large opening at the base of your skull where the brainstem connects to the spinal cord. When CSF pressure drops, the cerebellum can herniate (push down) through this opening, compressing vital structures.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Cerebellum <span class="dict-card__phonetic">[sair-uh-BELL-um]</span></div>
+        <div class="dict-card__def">The structure at the base of your brain — controls balance, coordination, cognition, and emotion (far more than most people realize). It's the part most directly affected by brain sag, because it sits right above the foramen magnum.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Occipital Region <span class="dict-card__phonetic">[ok-SIP-ih-tul]</span></div>
+        <div class="dict-card__def">The back of your head, where the skull curves down toward the neck. This is where many CSF leak headaches are centered — a relentless pain at the base of the skull that radiates upward over the scalp and often down to the eyes.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Epidural Space <span class="dict-card__phonetic">[ep-ih-DUR-ul]</span></div>
+        <div class="dict-card__def">The area between the dura and the bony walls of the spinal canal. When CSF leaks out of the dura, it often collects here first. An "epidural fluid collection" on MRI can be a sign of an active or recent leak.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Thecal Sac <span class="dict-card__phonetic">[THEE-kul sak]</span></div>
+        <div class="dict-card__def">The fluid-filled tube of dura that surrounds and protects your spinal cord and nerve roots. Think of it as the waterproof bag holding your spinal cord and CSF in place. When a report says "effacement of the thecal sac" or "compression of the thecal sac," it means something is pushing against that bag — a disc bulge, a bone spur, or swelling. If there's a tear in it, that's where CSF leaks out.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <!-- ── DIAGNOSES ── -->
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Spontaneous Intracranial Hypotension (SIH) <span class="dict-card__phonetic">[spon-TAY-nee-us in-truh-KRAY-nee-ul hy-poh-TEN-shun]</span></div>
+        <div class="dict-card__def">Low pressure inside the skull caused by a spinal CSF leak that occurred without trauma or medical procedure. "Spontaneous" means it happened on its own. The brain sags, the headaches are often positional (worse standing, better lying flat), and it's widely underdiagnosed.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Kyphotic Straightening <span class="dict-card__phonetic">[ky-FOT-ik]</span></div>
+        <div class="dict-card__def">Your thoracic spine (mid-back) has lost its natural forward curve and appears too straight. Often attributed to muscle spasm. In my case, this was the entire conclusion — "suggests muscle spasm" — while a diverticulum sat right there on the image, unreported.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Pachymeningeal Enhancement <span class="dict-card__phonetic">[pak-ee-men-IN-jee-ul]</span></div>
+        <div class="dict-card__def">The thick outer lining of the brain (pachymeninges) lights up on contrast MRI. This is one of the hallmark signs of intracranial hypotension. It means the lining is inflamed and thickened — often because the brain is sagging and pulling on its coverings.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Occipital Neuralgia <span class="dict-card__phonetic">[ok-SIP-ih-tul nur-AL-juh]</span></div>
+        <div class="dict-card__def">Diagnosis for sharp, shooting pain at the back of the head along the occipital nerves. It's a real condition — but it's also commonly used as a convenient label when doctors can't explain recurring severe headaches. In my case, it was treating a symptom of the leak, not the cause.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">CSF Rhinorrhea <span class="dict-card__phonetic">[ry-nor-EE-uh]</span></div>
+        <div class="dict-card__def">Clear cerebrospinal fluid leaking from your nose. Most people don't know this can even happen. It can look like a runny nose or allergies, but the fluid is often watery, clear, and drips from only one nostril. A beta-2 transferrin test can confirm it's CSF.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Cervical Spondylosis <span class="dict-card__phonetic">[SER-vih-kul spon-dih-LOH-sis]</span></div>
+        <div class="dict-card__def">Age-related wear and tear on the discs and bones of the neck (cervical spine). It's extremely common and often "found" on imaging. Doctors may point to it as the cause of your neck pain — even when the real problem is something else entirely.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Tonsillar Herniation / Ectopia <span class="dict-card__phonetic">[TON-sih-lar her-nee-AY-shun / ek-TOH-pee-uh]</span></div>
+        <div class="dict-card__def">The cerebellar tonsils (bottom tips of the cerebellum) have been pushed downward through the foramen magnum. Can look like Chiari I malformation on imaging. In SIH patients, this isn't a birth defect — it's caused by the brain sagging from low CSF pressure.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Unclear Etiology <span class="dict-card__phonetic">[ee-tee-OL-oh-jee]</span></div>
+        <div class="dict-card__def">"We don't know what's causing this." You'll see this in your chart when doctors can't explain your symptoms. It should trigger further investigation — but often it becomes a dead end. Ten years of my records said "unclear etiology."</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Musculoskeletal <span class="dict-card__phonetic">[mus-kyoo-loh-SKEL-ih-tul]</span></div>
+        <div class="dict-card__def">Related to muscles and bones. When doctors say your pain is "musculoskeletal in nature," they mean they think it's coming from muscles or joints — not nerves, organs, or structural problems. It's the default label when nothing obvious shows up on imaging.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">SEEPS (Mnemonic)</div>
+        <div class="dict-card__def">What doctors look for on brain MRI to diagnose SIH: <strong>S</strong>ubdural fluid collections, <strong>E</strong>nhancement of pachymeninges, <strong>E</strong>ngorgement of venous sinuses, <strong>P</strong>ituitary enlargement, <strong>S</strong>agging of the brain. If your MRI shows any of these, push for a CSF leak workup.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Brainstem Slumping / Sagging</div>
+        <div class="dict-card__def">The actual radiology term for what this site is named after. When CSF volume drops, the brain physically sags downward, compressing the brainstem against the skull base. On MRI, the brainstem appears flattened and displaced. This is considered <strong>specific for intracranial hypotension</strong> — if a radiologist sees it, there should be no question about what's happening.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Subdural Fluid Collections <span class="dict-card__phonetic">[sub-DUR-ul]</span></div>
+        <div class="dict-card__def">Fluid that accumulates between the brain's surface and the dura. When the brain sags, it pulls away from the inner skull, and the gap can fill with fluid or even blood (subdural hematoma). This is one of the SEEPS signs and can be a serious complication of prolonged intracranial hypotension.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Venous Engorgement</div>
+        <div class="dict-card__def">The large veins (venous sinuses) inside the skull appear swollen and distended on MRI. When CSF volume drops, blood volume increases to compensate — the Monro-Kellie doctrine. Convexity of the transverse sinus is one of the most common imaging findings in SIH (seen in ~75% of cases).</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">Pituitary Enlargement <span class="dict-card__phonetic">[pih-TOO-ih-tair-ee]</span></div>
+        <div class="dict-card__def">The pituitary gland at the base of the brain appears swollen on MRI. Part of the SEEPS findings. When CSF pressure drops, blood volume in the skull increases to compensate, and the pituitary — which is highly vascular — engorges. It can mimic a pituitary tumor if the radiologist isn't thinking about SIH.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="diagnosis">
+        <div class="dict-card__term">CSF-Venous Fistula (CVF) <span class="dict-card__phonetic">[FIS-tyoo-luh]</span></div>
+        <div class="dict-card__def">An abnormal connection between the spinal fluid space and a vein, allowing CSF to drain directly into the bloodstream. This is a relatively recently recognized cause of SIH and can be extremely difficult to detect — standard CT myelograms often miss them entirely. Digital subtraction myelography (DSM) is usually needed to find them.</div>
+        <div class="dict-card__tag">Diagnoses</div>
+      </div>
+
+      <div class="dict-card" data-category="anatomy">
+        <div class="dict-card__term">Monro-Kellie Doctrine <span class="dict-card__phonetic">[mun-ROH KEL-ee]</span></div>
+        <div class="dict-card__def">The principle that the skull is a fixed container: brain, blood, and CSF must always add up to the same total volume. If CSF drops, blood volume increases to fill the gap. That's why SIH causes venous engorgement, pachymeningeal enhancement, and pituitary swelling — the body is compensating for the missing fluid.</div>
+        <div class="dict-card__tag">Anatomy</div>
+      </div>
+
+      <!-- ── IMAGING MEASUREMENTS ── -->
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Mamillopontine Distance <span class="dict-card__phonetic">[mam-IL-oh-PON-teen]</span></div>
+        <div class="dict-card__def">The distance between the mammillary bodies and the top of the pons, measured on a sagittal MRI. Normal is about 7mm. Below 5.5mm is a quantitative sign of brain sag. This measurement turns a subjective "does the brain look low?" into an objective number — and it's one of the most useful tools for diagnosing intracranial hypotension when the other signs are subtle.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Pontomesencephalic Angle <span class="dict-card__phonetic">[PON-toh-mez-en-seh-FAL-ik]</span></div>
+        <div class="dict-card__def">The angle between the midbrain and the pons on sagittal MRI. Normal is around 65°. Below 50° is a sign of brain sag — the brainstem is being compressed and flattened. Like the mamillopontine distance, this gives radiologists a hard number instead of a judgment call.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Suprasellar / Prepontine Cistern Effacement <span class="dict-card__phonetic">[SOO-pruh-SEL-ar / pree-PON-teen SIS-tern eh-FAYS-ment]</span></div>
+        <div class="dict-card__def">The CSF-filled spaces around the base of the brain appear compressed or absent on MRI. Normally these cisterns (fluid pockets) are clearly visible. When the brain sags, it squashes these spaces flat — "effacement" means they've been obliterated. A suprasellar cistern of 4mm or less is a major diagnostic sign.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <!-- ── HOW RADIOLOGY WORKS (& DOESN'T) ── -->
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">ABCs (X-Ray Review Mnemonic)</div>
+        <div class="dict-card__def"><strong>A</strong>lignment, <strong>B</strong>ones, <strong>C</strong>artilage, <strong>S</strong>oft tissue. This is the systematic checklist radiologists are trained to follow when reading an x-ray. Every structure, every angle. In practice, time pressure and volume can turn this into a glance. If your report seems thin, ask: did they actually go through the ABCs?</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">ABCDEF (Chest X-Ray Review)</div>
+        <div class="dict-card__def"><strong>A</strong>irways, <strong>B</strong>ones, <strong>C</strong>ardiac silhouette, <strong>D</strong>iaphragm, <strong>E</strong>dges (pleura/costophrenic angles), <strong>F</strong>ields (lung). A systematic approach to ensure nothing gets missed on a chest x-ray. When a radiologist writes a two-sentence report, ask yourself how thoroughly they walked through this list.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Satisfaction of Search (SOS)</div>
+        <div class="dict-card__def">A documented cognitive error where finding one abnormality causes the radiologist to stop looking for others. Once they spot something, the brain says "found it" and moves on. <strong>Studies show detection of additional findings drops significantly after the first one is identified.</strong> If your report mentions one finding, there may be more they didn't look for.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">The 30% Problem</div>
+        <div class="dict-card__def">Studies spanning 75 years have consistently shown that radiologists miss significant findings on approximately 30% of abnormal studies. The real-time error rate averages 3–5% — applied to over a billion imaging studies worldwide, that's roughly 40 million errors per year. This isn't about bad doctors. It's about a system that asks humans to maintain perfection under impossible volume.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Decision Fatigue</div>
+        <div class="dict-card__def">As radiologists read more studies in a shift, their accuracy drops. The brain takes shortcuts under mental strain, especially later in the day or during high-volume shifts. Your imaging study read at 4pm on a Friday after 200 other cases may not get the same attention as the one read at 9am. It's not malice — it's human cognition under industrial-scale demand.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">Premature Closure</div>
+        <div class="dict-card__def">When a doctor lands on a diagnosis early and stops considering alternatives. "Kyphotic straightening, suggests muscle spasm" — case closed, move on. But what if the straightening was caused by a diverticulum pressing on structures? Premature closure is one of the most common cognitive biases in medicine, and it thrives when there's pressure to read faster.</div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <div class="dict-card" data-category="imaging">
+        <div class="dict-card__term">“Check Structure” (Clinical Indication)</div>
+        <div class="dict-card__def">When your doctor orders imaging with a vague clinical indication like "check structure" or "chronic back pain," it tells the radiologist almost nothing about what to look for. A vague order gets a vague read. Compare that to "evaluate T12-L1 for structural abnormality, history of positional headaches and CSF rhinorrhea." <strong>The more specific the order, the harder they look.</strong></div>
+        <div class="dict-card__tag">Imaging &amp; Reports</div>
+      </div>
+
+      <!-- ── PROCEDURES & TESTS ── -->
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">MRI (Magnetic Resonance Imaging)</div>
+        <div class="dict-card__def">Uses magnets and radio waves (no radiation) to create detailed images of soft tissues. Best for seeing the brain, spinal cord, discs, and fluid collections. Critical for evaluating CSF leaks. An MRI "with contrast" adds gadolinium dye to highlight inflammation.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">CT Myelogram <span class="dict-card__phonetic">[MY-el-oh-gram]</span></div>
+        <div class="dict-card__def">Contrast dye is injected into your spinal canal via lumbar puncture, then a CT scan is taken. Considered the gold standard for pinpointing where a CSF leak is. But here's the catch: if you're not actively leaking during the test, it can come back "unremarkable" — even if you absolutely have a leak.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">Digital Subtraction Myelography (DSM) <span class="dict-card__phonetic">[my-el-OG-ruh-fee]</span></div>
+        <div class="dict-card__def">A more advanced version of myelography that uses real-time fluoroscopy to watch contrast dye flow through the spinal canal. Especially useful for detecting CSF-venous fistulas, which regular CT myelograms often miss.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">Epidural Blood Patch <span class="dict-card__phonetic">[ep-ih-DUR-ul]</span></div>
+        <div class="dict-card__def">A treatment where your own blood is injected into the epidural space to seal a CSF leak. It's often the first treatment tried. Works well for many patients, but may need to be repeated or targeted to the specific leak site to be effective.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">Beta-2 Transferrin Test <span class="dict-card__phonetic">[BAY-tuh-2 trans-FAIR-in]</span></div>
+        <div class="dict-card__def">A lab test that analyzes fluid (from your nose or ear) to determine whether it contains CSF. Beta-2 transferrin is a protein found almost exclusively in cerebrospinal fluid. If the test is positive, it confirms a CSF leak.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">Lumbar Puncture (Spinal Tap) <span class="dict-card__phonetic">[LUM-bar PUNK-chur]</span></div>
+        <div class="dict-card__def">A needle is inserted into the lower spine to measure CSF pressure or collect fluid for testing. Low opening pressure can support an SIH diagnosis — but normal pressure doesn't rule it out. Some SIH patients have normal pressure readings.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <div class="dict-card" data-category="procedure">
+        <div class="dict-card__term">Occipital Nerve Block</div>
+        <div class="dict-card__def">An injection of numbing medication around the occipital nerves at the base of the skull. Can temporarily relieve headache pain — but if the real problem is a CSF leak, the relief is masking a symptom, not treating the cause.</div>
+        <div class="dict-card__tag">Procedures &amp; Tests</div>
+      </div>
+
+      <!-- ── SYMPTOMS ── -->
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Positional / Orthostatic Headache <span class="dict-card__phonetic">[or-thoh-STAT-ik]</span></div>
+        <div class="dict-card__def">A headache that gets dramatically worse when you stand up and improves when you lie down. This is the classic hallmark of a CSF leak. If you have this pattern, say the words "positional headache" to your doctor — it should trigger a specific workup.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Photophobia <span class="dict-card__phonetic">[foh-toh-FOH-bee-uh]</span></div>
+        <div class="dict-card__def">Sensitivity to light. During a flare, even normal room lighting can feel unbearable. It's a common feature of both migraines and CSF leak headaches — which is partly why they get confused for each other.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Phonophobia <span class="dict-card__phonetic">[foh-noh-FOH-bee-uh]</span></div>
+        <div class="dict-card__def">Sensitivity to sound. Everyday noises can feel amplified and painful. Another symptom shared between migraine and SIH that can make diagnosis harder.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Tinnitus <span class="dict-card__phonetic">[TIN-ih-tus]</span></div>
+        <div class="dict-card__def">Ringing, buzzing, or whooshing sounds in the ears with no external source. In SIH, it can be caused by changes in pressure affecting the inner ear structures. It's one of those symptoms that gets brushed off or attributed to stress.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Diplopia <span class="dict-card__phonetic">[dih-PLOH-pee-uh]</span></div>
+        <div class="dict-card__def">Double vision. Brain sag can stretch the cranial nerves that control eye movement, causing you to see two of everything. This is a serious neurological symptom that should prompt immediate investigation.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Cognitive Fog / Dysexecutive Symptoms <span class="dict-card__phonetic">[dis-eg-ZEK-yoo-tiv]</span></div>
+        <div class="dict-card__def">Difficulty thinking, concentrating, remembering, or making decisions. CSF leak patients often describe feeling like their brain is "wrapped in cotton." Cerebellar compression from brain sag can directly cause these cognitive issues — it's not anxiety, it's not depression, it's your brain being physically displaced.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+      <div class="dict-card" data-category="symptoms">
+        <div class="dict-card__term">Exacerbated by Valsalva <span class="dict-card__phonetic">[eg-ZAS-er-bay-ted by val-SAL-vuh]</span></div>
+        <div class="dict-card__def">Pain gets worse with straining — coughing, sneezing, bearing down during bowel movements, or heavy lifting. These actions increase spinal pressure, which can push more CSF through a leak or put strain on a diverticulum. If this describes your headache triggers, tell your doctor.</div>
+        <div class="dict-card__tag">Symptoms</div>
+      </div>
+
+    </div>
+
+    <p class="dict-note">This isn't every medical term that exists — it's the ones that matter when you're reading your own records and trying to figure out what's actually going on. It also includes terms about how the system works (and doesn't) — because understanding why things get missed is just as important as understanding what was missed. Built from 13 years of appointments, reports, and hard lessons.</p>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════ DISCLAIMER ═══════════════ -->
+<div class="section" style="padding-block: var(--space-4);">
+  <div class="container">
+    <p class="disclaimer">This website is for informational and advocacy purposes only. It is not medical advice. Always consult a qualified healthcare provider for diagnosis and treatment. The experiences shared here are personal and may not reflect every patient's situation.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__text">&copy; 2026 The Brain Sagger. All rights reserved.</div>
+    <div class="footer__links">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__link">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script>
+// Theme toggle
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+  r.setAttribute('data-theme', d);
+  if (t) {
+    updateToggleIcon(t, d);
+    t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+      updateToggleIcon(t, d);
+    });
+  }
+  function updateToggleIcon(btn, theme) {
+    btn.innerHTML = theme === 'dark'
+      ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+})();
+
+// Header scroll
+(function(){
+  const header = document.getElementById('header');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > 50) {
+      header.classList.add('header--scrolled');
+    } else {
+      header.classList.remove('header--scrolled');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+// Mobile nav
+function toggleMobileNav() {
+  const nav = document.getElementById('mainNav');
+  const btn = document.querySelector('.mobile-nav-toggle');
+  const isOpen = nav.classList.toggle('is-open');
+  btn.setAttribute('aria-expanded', isOpen);
+}
+
+// Close mobile nav on link click
+document.querySelectorAll('.header__nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mainNav').classList.remove('is-open');
+    document.querySelector('.mobile-nav-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Dictionary filter & search
+(function(){
+  const filters = document.querySelectorAll('.dict-filter');
+  const cards = document.querySelectorAll('.dict-card');
+  const searchInput = document.getElementById('dictSearch');
+  const grid = document.getElementById('dictGrid');
+  let activeFilter = 'all';
+  let searchTerm = '';
+
+  function updateCards() {
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const cat = card.getAttribute('data-category');
+      const matchFilter = activeFilter === 'all' || cat === activeFilter;
+      const text = (card.querySelector('.dict-card__term').textContent + ' ' + card.querySelector('.dict-card__def').textContent).toLowerCase();
+      const matchSearch = !searchTerm || text.includes(searchTerm);
+      if (matchFilter && matchSearch) {
+        card.classList.remove('is-hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('is-hidden');
+      }
+    });
+    // Handle empty state
+    let emptyEl = grid.querySelector('.dict-empty');
+    if (visibleCount === 0) {
+      if (!emptyEl) {
+        emptyEl = document.createElement('div');
+        emptyEl.className = 'dict-empty';
+        emptyEl.textContent = 'No terms match your search. Try a different keyword.';
+        grid.appendChild(emptyEl);
+      }
+    } else if (emptyEl) {
+      emptyEl.remove();
+    }
+  }
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => { b.classList.remove('is-active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
+      activeFilter = btn.getAttribute('data-filter');
+      updateCards();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      searchTerm = e.target.value.toLowerCase().trim();
+      updateCards();
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
