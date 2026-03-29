@@ -12,7 +12,7 @@
     .brain { color: #111827; }
     .saggy { color: #3b82f6; }
     table th { background: #1e40af; color: white; }
-    tr:hover { background-color: #f8fafc; }
+    .table-container { overflow-x: auto; } /* fixes mobile table */
   </style>
 </head>
 <body class="bg-slate-50">
@@ -24,13 +24,13 @@
         <span class="logo-text font-bold"><span class="brain">brain</span><span class="saggy">saggy</span></span>
       </div>
       <h1 class="text-2xl font-semibold text-slate-800">Medical-to-Layman Dictionary</h1>
-      <a href="/" class="text-blue-600 hover:text-blue-700 flex items-center gap-2">
-        <i class="fas fa-home"></i> Back to Home
+      <a href="/" class="text-blue-600 hover:text-blue-700 flex items-center gap-2 text-sm md:text-base">
+        <i class="fas fa-home"></i> Home
       </a>
     </div>
   </div>
 
-  <div class="max-w-6xl mx-auto px-6 py-8">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-8">
 
     <!-- Search -->
     <div class="mb-8">
@@ -43,69 +43,29 @@
       </div>
     </div>
 
-    <!-- === NEW SECTION YOU ASKED FOR === -->
+    <!-- Physiology & Key Principles -->
     <h2 class="text-3xl font-bold mb-4 text-slate-800">Physiology & Key Principles</h2>
-    <table class="w-full mb-12 text-left border-collapse">
-      <tr class="bg-blue-900 text-white">
-        <th class="px-6 py-4 font-medium">Term</th>
-        <th class="px-6 py-4 font-medium">Phonetic</th>
-        <th class="px-6 py-4 font-medium">Full Definition</th>
-      </tr>
-      <tr class="border-b hover:bg-slate-50">
-        <td class="px-6 py-4 font-semibold">Monro-Kellie Doctrine</td>
-        <td class="px-6 py-4">[MON-ro KEL-ee DOK-trin]</td>
-        <td class="px-6 py-4">The skull is a rigid, fixed-volume box. The three things inside it (brain tissue, blood, and cerebrospinal fluid) must always add up to the same total volume. If CSF leaks out, the blood vessels have to swell to “make up the difference.”</td>
-      </tr>
-      <tr class="border-b hover:bg-slate-50">
-        <td class="px-6 py-4 font-semibold">Archimedes’ Principle</td>
-        <td class="px-6 py-4">[ar-kih-MEE-deez PRIN-sih-pul]</td>
-        <td class="px-6 py-4">Any object (like your brain) submerged in a fluid (CSF) is buoyed up by a force equal to the weight of the fluid it displaces. When CSF volume drops, you lose that buoyancy — the brain literally feels heavier and begins to sag downward.</td>
-      </tr>
-      <tr class="border-b hover:bg-slate-50">
-        <td class="px-6 py-4 font-semibold">Buoyancy Compensation</td>
-        <td class="px-6 py-4">[BOY-an-see kom-pen-SAY-shun]</td>
-        <td class="px-6 py-4">The brain’s “float” inside the CSF. When the fluid level drops, the brain loses its normal buoyancy and starts to sink or pull on pain-sensitive structures (dura, nerves, veins).</td>
-      </tr>
-      <tr class="border-b hover:bg-slate-50">
-        <td class="px-6 py-4 font-semibold">Venous Hypervolemia</td>
-        <td class="px-6 py-4">[VEE-nus hy-per-voh-LEE-mee-uh]</td>
-        <td class="px-6 py-4">The Monro-Kellie compensation where blood vessels (especially veins) swell inside the skull to replace lost CSF volume. In severe leaks this can extend outside the skull, causing scalp swelling or tenderness.</td>
-      </tr>
-      <tr class="border-b hover:bg-slate-50">
-        <td class="px-6 py-4 font-semibold">Dynamic Monro-Kellie Compensation</td>
-        <td class="px-6 py-4">[dy-NAM-ik MON-ro KEL-ee kom-pen-SAY-shun]</td>
-        <td class="px-6 py-4">The real-time, fluctuating version of the Monro-Kellie doctrine. Symptoms can come and go quickly because the body is constantly adjusting blood volume to try to keep intracranial pressure stable.</td>
-      </tr>
-    </table>
-
-    <!-- === YOUR OLD TERMS GO HERE === -->
-    <!-- Paste your old <tr> rows from the previous dictionary here (between the two comment lines). -->
-    <!-- Example format (you can delete this comment block after you add your terms): -->
-    <!--
-    <tr class="border-b hover:bg-slate-50">
-      <td class="px-6 py-4 font-semibold">Nerve root diverticulum</td>
-      <td class="px-6 py-4">[NERV root dy-ver-TIK-yoo-lum]</td>
-      <td class="px-6 py-4">A balloon-like pouch on the sleeve around a spinal nerve root. Common spot where CSF can slowly leak out.</td>
-    </tr>
-    -->
-
-    <p class="text-center text-sm text-slate-500 mt-12">
-      brainsaggy Dictionary • Patient-created • Always consult a specialist
-    </p>
-  </div>
-
-  <script>
-    // Working live search (searches terms + phonetic)
-    document.getElementById('searchInput').addEventListener('keyup', function() {
-      let filter = this.value.toLowerCase();
-      let rows = document.querySelectorAll('table tr');
-      rows.forEach(row => {
-        if (row.cells.length > 0) {
-          let text = row.textContent.toLowerCase();
-          row.style.display = text.includes(filter) ? '' : 'none';
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+    <div class="table-container rounded-3xl border border-slate-200 overflow-hidden mb-12">
+      <table class="w-full text-left border-collapse min-w-[700px]">
+        <thead>
+          <tr class="bg-blue-900 text-white">
+            <th class="px-6 py-4 font-medium">Term</th>
+            <th class="px-6 py-4 font-medium">Phonetic</th>
+            <th class="px-6 py-4 font-medium">Full Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-slate-50">
+            <td class="px-6 py-4 font-semibold">Monro-Kellie Doctrine</td>
+            <td class="px-6 py-4">[MON-ro KEL-ee DOK-trin]</td>
+            <td class="px-6 py-4">The skull is a rigid, fixed-volume box. The three things inside it (brain tissue, blood, and cerebrospinal fluid) must always add up to the same total volume. If CSF leaks out, the blood vessels have to swell to “make up the difference.”</td>
+          </tr>
+          <tr class="border-b hover:bg-slate-50">
+            <td class="px-6 py-4 font-semibold">Archimedes’ Principle</td>
+            <td class="px-6 py-4">[ar-kih-MEE-deez PRIN-sih-pul]</td>
+            <td class="px-6 py-4">Any object (like your brain) submerged in a fluid (CSF) is buoyed up by a force equal to the weight of the fluid it displaces. When CSF volume drops, you lose that buoyancy — the brain literally feels heavier and begins to sag downward.</td>
+          </tr>
+          <tr class="border-b hover:bg-slate-50">
+            <td class="px-6 py-4 font-semibold">Buoyancy Compensation</td>
+            <td class="px-6 py-4">[BOY-an-see kom-pen-SAY-shun]</td>
+            <td class="px-6 py
