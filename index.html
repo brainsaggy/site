@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Brain Sagger — CSF Leak Advocacy & Self-Diagnosis Story</title>
+<meta name="description" content="One patient's journey from misdiagnosis to self-advocacy. Learn about spinal CSF leaks, intracranial hypotension, and how to fight for your own diagnosis.">
+<meta property="og:title" content="The Brain Sagger — CSF Leak Advocacy">
+<meta property="og:description" content="One patient's journey from misdiagnosis to self-advocacy. Learn about spinal CSF leaks, intracranial hypotension, and how to fight for your own diagnosis.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="./favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The Brain Sagger",
+  "description": "CSF leak advocacy, self-diagnosis story, and patient education",
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main" class="sr-only" style="position:absolute;top:0;left:0;padding:var(--space-2) var(--space-4);background:var(--color-primary);color:var(--color-text-inverse);z-index:100;font-size:var(--text-sm);">Skip to content</a>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#" class="header__logo" aria-label="The Brain Sagger — Home">
+      <img class="header__logo-icon" src="./assets/icon.png" alt="" width="36" height="36" style="border-radius: 50%;">
+      <span class="header__logo-text">The Brain Sagger</span>
+    </a>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMobileNav()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav class="header__nav" id="mainNav">
+      <a href="#story" class="header__nav-link">My Story</a>
+      <a href="#csf-leaks" class="header__nav-link">About CSF Leaks</a>
+      <a href="./dictionary.html" class="header__nav-link">Dictionary</a>
+      <a href="#timeline" class="header__nav-link">Timeline</a>
+      <a href="#loved-ones" class="header__nav-link">For Loved Ones</a>
+      <a href="#guide" class="header__nav-link">The Guide</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="main">
+  <div class="hero__bg">
+    <img src="./assets/hero-brain-v3.png" alt="" loading="eager" width="1600" height="900">
+  </div>
+  <div class="hero__content">
+    <div class="hero__tagline">Patient Advocacy</div>
+    <h1 class="hero__title">Your Brain Is Sagging. Doctors Said It's Fine.</h1>
+    <p class="hero__subtitle">After 13 years of being told my debilitating headaches were "just muscle spasms," I diagnosed my own spinal CSF leak. This is what they missed, why it matters, and how you can fight for yourself too.</p>
+    <div class="hero__cta-group">
+      <a href="#story" class="btn btn--primary">Read My Story</a>
+      <a href="#csf-leaks" class="btn btn--outline">What Is a CSF Leak?</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ STATS ═══════════════ -->
+<div class="section" style="padding-block: 0;">
+  <div class="container">
+    <div class="stat-row reveal">
+      <div class="stat">
+        <div class="stat__number">5+ Years</div>
+        <div class="stat__label">Average Time to Diagnosis</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">~5/100K</div>
+        <div class="stat__label">Annual Incidence (likely underreported)</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">50%+</div>
+        <div class="stat__label">Initially Misdiagnosed</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">1 in 3</div>
+        <div class="stat__label">Told "It's All in Your Head"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MY STORY ═══════════════ -->
+<section class="section" id="story">
+  <div class="container container--wide">
+    <div class="story-layout">
+      <div class="story__text">
+        <div class="section__eyebrow reveal">My Story</div>
+        <h2 class="section__title reveal">They Called It Muscle Spasms. It Was a Hole in My Spine.</h2>
+        <div class="divider reveal"></div>
+
+        <div class="story__prose reveal">
+          <p>On New Year's Eve 2012, I walked into a major academic medical center with headaches and back pain I couldn't explain. The pain was in my thoracic spine. The headaches were aching, band-like. Something was wrong. That was the beginning of a 13-year medical odyssey.</p>
+
+          <p>By 2015, I was in ERs multiple times — tearful, depressed, dealing with what they called "migraines." I described pain at the base of my skull like being hit with a hammer, pain in my actual eyeballs, back pain that radiated up to my head. The thoracic x-ray showed "kyphotic straightening suggesting muscle spasm." That's as far as they looked.</p>
+
+          <div class="story__pullquote">
+            "I spent 13 years being dismissed, gaslit, and told I was fine — while diverticula at T12-L1 were actively leaking cerebrospinal fluid."
+          </div>
+
+          <p>Over the next decade, I tried physical therapy, acupuncture, muscle relaxants, gabapentin, nerve blocks — nothing worked because they were treating symptoms, not the cause. An MRI was denied in 2018. Doctors kept writing "muscular" in my chart. I couldn't sit for more than 15 minutes. I couldn't work. I lost relationships because the pain and fog changed who I was as a person.</p>
+
+          <p>In August 2025, I experienced the worst flare-up of my life. I became desperate. I started pulling my own medical records, reading radiology reports, studying anatomy. On September 14th, I spotted a dark area on my own 2015 x-ray — in the exact location where I'd always felt pain. I raised it with my PCP. He spent most of that visit explaining why it probably wasn't what I thought it was.</p>
+
+          <p>When I reported clear fluid leaking from my nose onto my bedsheets while sleeping, I showed a neurologist the stain. He told me that if it were CSF, I'd "probably be dead." So I guess I'm a zombie. I'm still here. Still leaking. Still fighting.</p>
+
+          <p>On November 18, 2025, a neurosurgeon finally looked at my MRI and saw what no one else had been willing to see: dilated nerve root sleeves at T12, a large diverticulum expanding the left L1 foramen, and a 13-year history consistent with spontaneous intracranial hypotension. My brain was literally sagging inside my head. That's not a metaphor — it's a documented medical phenomenon called "brain sag."</p>
+
+          <p>I thought that was the end of the fight. It wasn't. A CT myelogram came back "unremarkable" — even though the imaging clearly shows bone erosion at the leak site, visible on the slides. The same neurosurgeon who validated my 13-year nightmare essentially dropped me because I wasn't actively leaking during the test. Diagnosed and abandoned in the span of a few months.</p>
+
+          <p>This isn't a story about being smarter than doctors. It's a story about what happens when the system fails you — over and over — and you have no choice but to keep fighting. I lost meaningful relationships. I lost years of my life to a fog that no one could explain. I'm still trying to get this fixed. I'm sharing this because too many people are living in the same fog, being told the same things, and they deserve to know that getting a diagnosis doesn't mean getting treated.</p>
+        </div>
+      </div>
+
+      <div class="story__visual">
+        <div class="story__image-card reveal">
+          <img src="./assets/hero-brain-v3.png" alt="Medical illustration showing brain sag with cerebellum highlighted in red, indicating pain and herniation at the foramen magnum" loading="lazy" width="800" height="600">
+          <div class="story__image-caption">Brain sag occurs when CSF volume drops, causing the brain — particularly the cerebellum — to descend within the skull</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ABOUT CSF LEAKS ═══════════════ -->
+<section class="section section--alt" id="csf-leaks">
+  <div class="container container--wide">
+    <div class="section__eyebrow reveal">Understanding the Condition</div>
+    <h2 class="section__title reveal">What Is a Spinal CSF Leak?</h2>
+    <p class="section__subtitle reveal">Cerebrospinal fluid cushions your brain and spinal cord. When it leaks out through a tear, hole, or diverticulum in the spinal dura, the resulting low pressure can cause debilitating symptoms that are frequently misdiagnosed.</p>
+
+    <div class="info-grid info-grid--featured">
+
+      <!-- Large featured card -->
+      <div class="info-card info-card--large reveal">
+        <svg class="info-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Brain profile -->
+          <path d="M20 6c-5 0-10 3-10 10 0 3 1 5 3 7 1 1 2 3 2 5h10c0-2 1-4 2-5 2-2 3-4 3-7 0-7-5-10-10-10z"/>
+          <!-- Brain folds -->
+          <path d="M15 12c2-1 5-1 7 0" opacity="0.5"/>
+          <path d="M13 16c3-1 7-1 10 0" opacity="0.5"/>
+          <path d="M14 20c2-0.5 5-0.5 8 0" opacity="0.5"/>
+          <!-- Downward arrow indicating sag -->
+          <path d="M20 30v6" stroke-width="2.5"/>
+          <path d="M17 34l3 3 3-3" stroke-width="2"/>
+        </svg>
+        <h3 class="info-card__title">Intracranial Hypotension</h3>
+        <div class="info-card__text">
+          <p>When cerebrospinal fluid leaks from the spinal canal, the volume and pressure inside the skull drops. The brain, no longer fully supported by its fluid cushion, sags downward — a phenomenon visible on MRI. This is why the condition is sometimes called "brain sag." The resulting symptoms can mimic everything from migraines to dementia, which is why it's so frequently misdiagnosed.</p>
+        </div>
+      </div>
+
+      <!-- Common Symptoms -->
+      <div class="info-card reveal">
+        <svg class="info-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M20 4v4M20 32v4M4 20h4M32 20h4"/>
+          <circle cx="20" cy="20" r="8"/>
+          <path d="M20 16v4l3 3"/>
+        </svg>
+        <h3 class="info-card__title">Symptoms</h3>
+        <div class="info-card__text">
+          <ul>
+            <li>Positional headaches (worse upright, better lying down)</li>
+            <li>Neck pain and stiffness</li>
+            <li>Cognitive fog / "brain fog"</li>
+            <li>Tinnitus or muffled hearing</li>
+            <li>Visual disturbances</li>
+            <li>Nausea and dizziness</li>
+            <li>Pain between the shoulder blades</li>
+            <li>CSF rhinorrhea (clear fluid draining from the nose)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- What Doctors Miss -->
+      <div class="info-card reveal">
+        <svg class="info-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="20" cy="20" r="14"/>
+          <path d="M14 14l12 12M26 14L14 26"/>
+        </svg>
+        <h3 class="info-card__title">What Gets Missed</h3>
+        <div class="info-card__text">
+          <ul>
+            <li>Told it's "just migraines"</li>
+            <li>Attributed to anxiety or stress</li>
+            <li>Labeled as muscle spasms</li>
+            <li>Diagnosed as fibromyalgia</li>
+            <li>MRI requests denied as "unnecessary"</li>
+            <li>CSF rhinorrhea mistaken for allergies or sinus issues</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Types of Leaks -->
+      <div class="info-card reveal">
+        <svg class="info-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M20 4c-4 6-10 10-10 18a10 10 0 0 0 20 0c0-8-6-12-10-18z"/>
+          <path d="M16 24a4 4 0 0 0 8 0" opacity="0.5"/>
+        </svg>
+        <h3 class="info-card__title">Types of CSF Leaks</h3>
+        <div class="info-card__text">
+          <ul>
+            <li><strong>Dural tear</strong> — a rip in the membrane surrounding the spinal cord</li>
+            <li><strong>Bone spur puncture</strong> — calcified disc material piercing the dura</li>
+            <li><strong>Meningeal diverticulum</strong> — an outpouching where CSF pools and may leak</li>
+            <li><strong>CSF-venous fistula</strong> — an abnormal connection draining CSF into a vein</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Diagnosis -->
+      <div class="info-card reveal">
+        <svg class="info-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <rect x="8" y="4" width="24" height="32" rx="3"/>
+          <path d="M14 12h12M14 18h8M14 24h10"/>
+          <circle cx="28" cy="28" r="6" fill="var(--color-bg)" stroke="currentColor"/>
+          <path d="M26 28h4M28 26v4"/>
+        </svg>
+        <h3 class="info-card__title">Getting Diagnosed</h3>
+        <div class="info-card__text">
+          <ul>
+            <li><strong>Brain MRI with contrast</strong> — may show pachymeningeal enhancement, brain sagging, or subdural collections</li>
+            <li><strong>CT myelogram</strong> — the gold standard for locating the actual leak site</li>
+            <li><strong>Digital subtraction myelography</strong> — for detecting CSF-venous fistulas</li>
+            <li><strong>Spinal MRI</strong> — may show epidural fluid collections or the diverticulum itself</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DICTIONARY CTA ═══════════════ -->
+<section class="section" id="dictionary">
+  <div class="container">
+    <div class="section__eyebrow reveal">Know What They're Saying</div>
+    <h2 class="section__title reveal">Medical-to-Layman Dictionary</h2>
+    <p class="section__subtitle reveal">60+ medical terms translated into plain English — built from real radiology reports, medical records, and 13 years of being dismissed. Filter by category, search by keyword, and finally understand what they've been writing about you.</p>
+    <div class="reveal" style="text-align: center; margin-top: var(--space-6);">
+      <a href="./dictionary.html" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-6); font-size: var(--text-base); font-weight: 600; border-radius: var(--radius-lg); background: var(--color-primary); color: var(--color-text-inverse); text-decoration: none; transition: transform var(--transition-interactive), box-shadow var(--transition-interactive);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Open the Dictionary
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TIMELINE ═══════════════ -->
+<section class="section" id="timeline">
+  <div class="container container--narrow">
+    <div class="section__eyebrow reveal">The Journey</div>
+    <h2 class="section__title reveal">13 Years of Being Dismissed</h2>
+    <p class="section__subtitle reveal">This is what the road to a self-diagnosis actually looks like. Over a decade of appointments, dismissals, one fleeting validation, and a fight that still isn't over.</p>
+
+    <div class="timeline reveal">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">December 2012</div>
+        <div class="timeline__title">The First Visit</div>
+        <div class="timeline__desc">New Year's Eve. First PCP visit at a major academic medical center for headaches and thoracic back pain. Pain described as aching, band-like. Aggravated by position. Associated with back pain. Noted as a "new problem."</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">2015</div>
+        <div class="timeline__title">ER Visits and Dismissed Imaging</div>
+        <div class="timeline__desc">Multiple ER visits for what they called "migraines." I described pain where my skull meets my spine "like being hit with a hammer." Thoracic x-ray showed kyphotic straightening — the radiologist wrote "muscle spasm." Pain in my actual eyeballs. Tearful. Depressed. Sent home every time.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">2016–2022</div>
+        <div class="timeline__title">The Lost Years</div>
+        <div class="timeline__desc">Physical therapy. Acupuncture. Muscle relaxants. Gabapentin. Nothing worked. In 2018, my doctor requested an MRI — insurance denied it. Point tenderness at L1 was noted over and over, always attributed to "musculoskeletal" causes. I couldn't sit for more than 15 minutes. Couldn't work. Lost relationships because the pain and fog changed who I was.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">August 2025</div>
+        <div class="timeline__title">The Breaking Point</div>
+        <div class="timeline__desc">The worst flare-up of my life. Three days of head pain radiating from the back of my skull. I became desperate. Started pulling my medical records. Reading every radiology report. Learning anatomy. My PCP diagnosed occipital neuralgia. I knew it was something more.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">September 2025</div>
+        <div class="timeline__title">"I Am Desperate"</div>
+        <div class="timeline__desc">I told my PCP I believed I had a cerebrospinal fluid leak. He spent most of the visit explaining why he didn't think so. I reported clear fluid draining from my nose. On September 14th, I found a dark area on my own 2015 x-ray — in the exact location of my pain spot. My PCP's reply: "If it is not mentioned in the radiology report it is unlikely pathological."</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">October 2025</div>
+        <div class="timeline__title">"You'd Probably Be Dead"</div>
+        <div class="timeline__desc">A neurologist evaluated me. Documented 12 years of severe headaches. Noted my T12 pain spot. I showed him a photo of a massive CSF leak stain on my bedsheet from fluid leaking out of my nose while sleeping. He told me if it were CSF, I'd "probably be dead." Considered a leak "unlikely." Suggested a headache clinic.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">November 18, 2025</div>
+        <div class="timeline__title">Confirmed</div>
+        <div class="timeline__desc">A neurosurgeon finally saw what no one else would. MRI showed dilated nerve root sleeves at T12 and a large diverticulum expanding the left L1 foramen. Assessment: 13-year history consistent with spontaneous intracranial hypotension. Suspected intermittent CSF leak from nerve root diverticula. Thirteen years. Validated in one appointment.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">Early 2026</div>
+        <div class="timeline__title">"Unremarkable"</div>
+        <div class="timeline__desc">CT myelogram ordered to locate the leak. The report came back "unremarkable" — despite imaging slides clearly showing bone erosion at the site, worn away over 13 years of leaking. The same neurosurgeon who diagnosed me essentially dropped my case because I wasn't actively leaking during the test. Diagnosed and abandoned.</div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__year">2026 — Present</div>
+        <div class="timeline__title">Still Fighting</div>
+        <div class="timeline__desc">Waiting on answers. Searching for a provider who will actually treat this. Pursuing accountability for the misdiagnosis. Building resources for patients stuck in the same cycle — because I've learned that even getting diagnosed doesn't mean the fight is over. You shouldn't have to diagnose yourself. But if you do, you sure as hell shouldn't have to beg for treatment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOR LOVED ONES ═══════════════ -->
+<section class="section section--alt" id="loved-ones">
+  <div class="container container--narrow">
+    <div class="section__eyebrow reveal">For Those Who Care About Us</div>
+    <h2 class="section__title reveal">When Someone You Love Has a CSF Leak</h2>
+    <div class="story__prose reveal" style="margin-top: var(--space-4);">
+      <p>This condition doesn't just affect the person who has it. It changes everything — personalities, relationships, plans, futures. The person you knew starts canceling plans, sleeping all day, struggling to think. They seem like a different person. They are.</p>
+      <p>Low CSF pressure affects the brain directly. It can alter mood, cognition, energy, and behavior. If someone you love has been diagnosed — or is fighting for a diagnosis — the most important thing you can do is believe them. Even when doctors don't.</p>
+      <p style="color: var(--color-primary); font-weight: 600;">A full guide for partners, family, and friends is coming. It's something I wish had existed for the people in my life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ GUIDE CTA ═══════════════ -->
+<section class="cta-section" id="guide">
+  <div class="container container--narrow">
+    <div class="section__eyebrow reveal">Coming Soon</div>
+    <h2 class="section__title reveal">The Self-Advocacy Guide</h2>
+    <p class="section__subtitle reveal">A no-nonsense guide to requesting your medical records, reading radiology reports, spotting red flags, and fighting for the diagnosis you deserve. Includes how to use AI as a research tool — not a doctor or a lawyer — to help you ask better questions and understand what you're reading. Written from experience, not a textbook.</p>
+    <form class="email-form reveal" onsubmit="handleSignup(event)">
+      <input type="email" class="email-form__input" placeholder="your@email.com" aria-label="Email address" required>
+      <button type="submit" class="email-form__btn">Notify Me</button>
+    </form>
+    <p class="cta-section__note reveal">No spam. Just a heads-up when it's ready.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ DISCLAIMER ═══════════════ -->
+<div class="section" style="padding-block: var(--space-4);">
+  <div class="container">
+    <p class="disclaimer">This website is for informational and advocacy purposes only. It is not medical advice. Always consult a qualified healthcare provider for diagnosis and treatment. The experiences shared here are personal and may not reflect every patient's situation.</p>
+  </div>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__text">&copy; 2026 The Brain Sagger. All rights reserved.</div>
+    <div class="footer__links">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__link">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script>
+// Theme toggle
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+  r.setAttribute('data-theme', d);
+  if (t) {
+    updateToggleIcon(t, d);
+    t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+      updateToggleIcon(t, d);
+    });
+  }
+  function updateToggleIcon(btn, theme) {
+    btn.innerHTML = theme === 'dark'
+      ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+})();
+
+// Header scroll
+(function(){
+  const header = document.getElementById('header');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > 50) {
+      header.classList.add('header--scrolled');
+    } else {
+      header.classList.remove('header--scrolled');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+// Mobile nav
+function toggleMobileNav() {
+  const nav = document.getElementById('mainNav');
+  const btn = document.querySelector('.mobile-nav-toggle');
+  const isOpen = nav.classList.toggle('is-open');
+  btn.setAttribute('aria-expanded', isOpen);
+}
+
+// Close mobile nav on link click
+document.querySelectorAll('.header__nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mainNav').classList.remove('is-open');
+    document.querySelector('.mobile-nav-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Scroll reveal
+(function(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+})();
+
+// Email signup (placeholder)
+function handleSignup(e) {
+  e.preventDefault();
+  const input = e.target.querySelector('input');
+  const btn = e.target.querySelector('button');
+  const email = input.value;
+  // In a real implementation, this would POST to a backend
+  btn.textContent = 'You\'re In!';
+  btn.disabled = true;
+  input.disabled = true;
+  input.value = '';
+  input.placeholder = 'Thanks — we\'ll be in touch.';
+  setTimeout(() => {
+    btn.textContent = 'Notify Me';
+    btn.disabled = false;
+    input.disabled = false;
+    input.placeholder = 'your@email.com';
+  }, 4000);
+}
+</script>
+
+</body>
+</html>
